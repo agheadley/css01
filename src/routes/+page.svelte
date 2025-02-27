@@ -1,4 +1,7 @@
 <script lang="ts">
+	import * as icon from '$lib/icon';
+
+	let isPasswordShow=false;
 </script>
 
 <svelte:head>
@@ -6,7 +9,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<p>Hello World!</p>
+
 <p>
 	<button class="button">Button</button>
 	<button class="button button-outline">Button</button>
@@ -18,7 +21,20 @@
 	<form>
 	<fieldset>
 	  <label for="nameField">Name</label>
-	  <input type="text" placeholder="CJ Patoilo" id="nameField">
+		
+		<input type="text" placeholder="CJ Patoilo" id="nameField">
+			
+		
+	 
+	 
+		<label for="passwordField">Password</label>
+		<input type={isPasswordShow ? 'text' : 'password'}  placeholder="password" id="passwordField">
+		<div class="float-right">
+			<input type="checkbox" bind:checked={isPasswordShow} id="confirmField">
+		<label class="label-inline" for="confirmField">Show password</label>
+	  	</div>
+		
+	 
 	  <label for="ageRangeField">Age Range</label>
 	  <select id="ageRangeField">
 		<option value="0-13">0-13</option>
@@ -79,5 +95,9 @@
 
 
 <style>
+
+
+
+
 
 </style>

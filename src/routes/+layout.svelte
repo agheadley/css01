@@ -1,5 +1,7 @@
 <script lang="ts">
 	import '../milligram.css';
+	import * as icon from '$lib/icon';
+
 
 	let { children } = $props();
 </script>
@@ -8,10 +10,22 @@
 	
 		
 	<nav>
-		<ul><a href={'#'}>Hello</a></ul>
-		<ul>Center</ul>
-		<ul>Right</ul>
+		<div class="brand">
+			Brand
+		</div>
+		<div>
+			<a href={'#'}>Dashboard</a>
+			<a href={'#'}>History</a>
+			<a href={'#'}>Admin</a>
+		</div>
+		<div>
+		<a href={'#'}>{@html icon.user()}</a>
+		</div>
+		
+		
 	</nav>
+
+	
 	
 
 	</header>
@@ -36,21 +50,34 @@
 nav {
 	display: flex;
 	justify-content: space-between;
-	line-height:1em;
-	padding-top:1.5rem;
+	
+	
 	padding-left:0.5rem;
 	padding-right:0.5rem;
+	height: 5rem;
+	line-height: 5rem;
+	text-align: center;
 }
+ nav a{
+	padding:0.2rem;
+	text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
 
-nav a {
-  float: left;
-  display: block;
-  text-align: center;
-  /*padding: 14px 16px;*/
-  text-decoration: none;
-  font-weight:600;
+ 
+ }
 
-}
+ nav .brand {
+	
+	font-size:2rem;
+	font-weight:700;
+
+	
+ }
+
 
 
 
@@ -65,7 +92,7 @@ nav a {
 }
 
 .content {
-	margin-top:5rem;
+	margin-top:7rem;
 }
 
 footer {
