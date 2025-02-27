@@ -8,7 +8,7 @@
 	
 		
 	<nav>
-		<ul>Left</ul>
+		<ul><a href={'#'}>Hello</a></ul>
 		<ul>Center</ul>
 		<ul>Right</ul>
 	</nav>
@@ -40,6 +40,16 @@ nav {
 	padding-top:1.5rem;
 	padding-left:0.5rem;
 	padding-right:0.5rem;
+}
+
+nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  text-decoration: none;
+  font-weight:600;
+
 }
 
 
