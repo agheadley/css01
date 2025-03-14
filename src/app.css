@@ -87,6 +87,7 @@ html {
   select {
     font-family: inherit;
     font-size: inherit;
+    margin: 0.2em;
   }
   button {
     background: var(--link);
@@ -189,6 +190,21 @@ html {
   
 
 /* AGH additions */
+
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+main {
+    min-height:80vh;
+}
+
 
   nav {
     justify-content: space-between;

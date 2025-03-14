@@ -1,6 +1,6 @@
 <script lang="ts">
 	//import '../milligram.css';
-	import '../app.css';
+	import '../../app.css';
 
 	import * as icon from '$lib/icon';
 
@@ -56,12 +56,5 @@
 
 
 
-footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-}
 
 </style>
