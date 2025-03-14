@@ -94,9 +94,8 @@
 </section>
 
 
-<p> <label class="file-upload" for="file-upload">
-Choose File
-</label>
+<p> 
+<label class="file-upload" for="file-upload">Choose File</label>
 <input id="file-upload" type="file"/>
 </p>
 <style>

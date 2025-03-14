@@ -116,6 +116,7 @@ html {
 
 
 
+<<<<<<< HEAD
   input,
   textarea,
   select {
@@ -262,3 +263,26 @@ fieldset {
   }
 
   
+=======
+.card-50 {
+    margin: 0 auto;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+    border:1px solid #606c76;
+    border-radius: .4rem;
+}
+
+@media (min-width: 56em) {
+
+    .card-50 {
+        margin: 0 auto;
+        max-width: 56.0rem;
+        padding: 0 2.0rem;
+        position: relative;
+        width: 100%;
+    }
+
+
+}
+>>>>>>> 70fe8167904f8977f213669034e004cff0b4efab

@@ -1,6 +1,7 @@
 <script lang="ts">
 	//import '../milligram.css';
 	import '../app.css';
+
 	import * as icon from '$lib/icon';
 
 
@@ -16,12 +17,12 @@
 			Brand
 		</div>
 		<div>
-			<a href={'#'}>Dashboard</a>
-			<a href={'#'}>History</a>
-			<a href={'#'}>Admin</a>
+			<a href={'/'}>Dashboard</a>
+			<a href={'/'}>History</a>
+			<a href={'/'}>Admin</a>
 		</div>
 		<div>
-		<a href={'#'}>{@html icon.user()}</a>
+		<a href={'/account'}>{@html icon.user()}</a>
 		</div>
 		
 		
