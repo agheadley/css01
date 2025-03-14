@@ -11,15 +11,14 @@
 
 
 <p>
-	<button class="button">Button</button>
-	<button class="button button-outline">Button</button>
-	<button class="button button-clear">Button</button>
-</p>
+	<button>Button</button>
+	<button class="outline">Button</button>
 
 
 <section>
 	<form>
 	<fieldset>
+		<legend>Legend</legend>
 	  <label for="nameField">Name</label>
 		
 		<input type="text" placeholder="CJ Patoilo" id="nameField">
@@ -53,6 +52,7 @@
   </form>
   
 </section>
+
 
 
 <section>
@@ -94,8 +94,12 @@
 </section>
 
 
+<p> <label class="file-upload" for="file-upload">
+Choose File
+</label>
+<input id="file-upload" type="file"/>
+</p>
 <style>
-
 
 
 
